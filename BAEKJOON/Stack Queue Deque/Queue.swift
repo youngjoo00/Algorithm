@@ -1,3 +1,4 @@
+// 큐 구현
 public struct Queue<T> {
    fileprivate var array = [T?]()
    fileprivate var head = 0
