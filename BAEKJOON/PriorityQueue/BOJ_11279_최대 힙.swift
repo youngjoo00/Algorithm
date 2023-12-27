@@ -5,15 +5,15 @@
 let N = Int(readLine()!)!
 
 // 최대 힙을 사용한 우선순위 큐 생성
-var minPriorityQueue = PriorityQueue<Int>(sort: >)
+var maxPriorityQueue = PriorityQueue<Int>(sort: >)
 
 for _ in 0..<N {
     let data = Int(readLine()!)!
     
     if data == 0 {
-        print(minPriorityQueue.dequeue() ?? 0)
+        print(maxPriorityQueue.dequeue() ?? 0)
     } else {
-        minPriorityQueue.enqueue(element: data)
+        maxPriorityQueue.enqueue(element: data)
     }
 }
 
